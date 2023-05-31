@@ -30,7 +30,7 @@ public class PolllnitailArray {
                 System.out.println(polls[i * 2 + 1][j]); // 보기 출력
             }
 
-            answers[i] = getAnswerFromUser(scanner, 4); // 답변 입력 받기
+            answers[i] = getAnswer(scanner, 4); // 답변 입력 받기
         }
 
         System.out.println("-----설문조사 결과-----");
@@ -40,7 +40,7 @@ public class PolllnitailArray {
 
     }
 
-    public static int getAnswerFromUser(Scanner scanner, int optionsCount) {
+    public static int getAnswer(Scanner scanner, int optionsCount) {
         int answer;
         do {
             System.out.print("답변을 선택하세요: ");
@@ -49,6 +49,9 @@ public class PolllnitailArray {
         } while (answer < 1 || answer > optionsCount);
 
         return answer;
+    }
+
+    public static void main() {
     }
 
 }
