@@ -22,12 +22,24 @@ public class PollsWithoutMethod {
             count = count+1;
             System.out.println();
         }
-        System.out.println("------결과 출력------");
-        System.out.println();
-        System.out.println("------결과 제출------");
-        for(int result=0; result < answers.length; result++){
-            System.out.println(answers[result]+"");
-           }
+
+        // 결과 값을 입력받는 메소드를 호출 
+
+
+        // 사용자로부터 정수를 입력받는 메소드
+        // public static String getar(Scanner scanner, String message) {
+        //     System.out.print(message);
+        //     public int getar(){ // second의 값을 던져주기 위함 
+        //         return this.array;
+        //     }
+        // }
+
+        // System.out.println("------결과 출력------");
+        // System.out.println();
+        // System.out.println("------결과 제출------");
+        // for(int result=0; result < answers.length; result++){
+        //     System.out.println(answers[result]+"");
+        //    }
         
         System.out.println();
         // return 0;
