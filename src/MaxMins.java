@@ -15,7 +15,7 @@ public class MaxMins
             System.out.println("두 번째 숫자를 입력하시오.");
             second = myObj.nextInt(); // 변수 second의 값 입력
             int result = maxMins.Max(first, second); // result 변수 선언 후 변수 result = funtion Max에서 계산
-            System.out.println("두 수의 합은: "+result);
+            System.out.println("두 수중 더 큰 값은: "+result);
         }
         catch (Exception e)
         {
@@ -29,7 +29,18 @@ public class MaxMins
         int result = 0;
         try
         {
-            result = first + second; //결과값 result = 변수 first + second
+            if (first > second)
+            {
+                result = first;
+            }
+            else if (first < second)
+            {
+                result = second;
+            }
+            else
+            {
+                result = first;
+            }
         }
         catch (Exception e)
         {
