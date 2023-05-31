@@ -39,7 +39,6 @@ public class MaxMins {
         return  result ;
  }
 
-
     public static void main(String[] args) {
         try {
             Scanner myObj = new Scanner(System.in);
