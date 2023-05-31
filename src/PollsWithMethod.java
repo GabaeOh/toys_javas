@@ -1,3 +1,4 @@
+
 import polls.PolllnitailArray;
 import polls.PollScanners;
 import polls.PollStatistics;
@@ -5,10 +6,11 @@ import polls.PollStatistics;
 public class PollsWithMethod {
     public static void main(String[] args) {
         try {
-            //array 
+
+            // array
             PolllnitailArray polllnitailArray = new PolllnitailArray();
             System.out.println();
-            PollScanners pollScanners= new PollScanners();
+            PollScanners pollScanners = new PollScanners();
             PollStatistics pollStatistics = new PollStatistics();
 
         } catch (Exception e) {
