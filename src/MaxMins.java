@@ -25,10 +25,10 @@ public class MaxMins
 
     public int Max(int first, int second)
     {
-        int result = first + second;
+        int result = 0;
         try
         {
-            
+            result = first + second;
         }
         catch (Exception e)
         {
