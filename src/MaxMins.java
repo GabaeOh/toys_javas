@@ -21,6 +21,7 @@ public class MaxMins
         {
             
         }
+        // return 0;
     }
 
     public int Max(int first, int second)
