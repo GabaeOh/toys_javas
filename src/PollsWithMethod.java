@@ -12,10 +12,10 @@ public class PollsWithMethod {
             polllnitailArray.sum();
             // 스캐너 사용하여 답항 답기
             PollScanners pollScanners = new PollScanners();
-            pollScanners.Scanners();
+            polllnitailArray.sum();
             // 받은 답항 통계
             PollStatistics pollStatistics = new PollStatistics();
-            pollStatistics.getAnswer();
+            polllnitailArray.getAnswer(null, 0);
 
         } catch (Exception e) {
             // TODO: handle exception

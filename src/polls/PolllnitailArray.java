@@ -40,15 +40,13 @@ public class PolllnitailArray {
         }
         
     public  int getAnswer(Scanner scanner, int optionsCount) {
-        
+
         int answers;
-        for(int first=0; first < answers.length; first=first+1){}
+        for(int first=0; first < 4; first=first+1){}
             System.out.print("답변을 선택하세요: ");
             answers = scanner.nextInt(); // 답변 입력 받는 코드
             scanner.nextLine(); // 개행 문자 처리
-            System.out.print(answers[first]+", ")
-
+            System.out.print(answers);
         return answers;
     }
-
 }
