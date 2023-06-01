@@ -10,7 +10,7 @@ public class PollScanners {
             Scanner myObj = new Scanner(System.in); // 스캐너를 이용해 값을 입력
             answer = myObj.nextInt();
 
-                
+            myObj.close();    
             }
             catch (Exception e) {
                 // TODO: handle exception
