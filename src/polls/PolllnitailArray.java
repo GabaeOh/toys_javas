@@ -19,34 +19,32 @@ public class PolllnitailArray {
                 { "4.강의 진행 속도는 적절하였는가?" },
                 { "(1).전혀 아니다", "(2)아니다", "(3)그렇다", "(4)매우그렇다" }
         };
-        int totalpolls = polls.length / 2;
-        int[] answers = new int[totalpolls];
 
-        for (int i = 0; i < totalpolls; i++) {
-            System.out.println(polls[i * 2][0]); // 문항 출력
+        int getpolls = polls.length / 2; 
+        int[] answers = new int[getpolls]; // 답변을 입력 받기 위해 인스턴스화 시키기
 
-            for (int j = 0; j < 4; j++) {
-                System.out.println(polls[i * 2 + 1][j]); // 보기 출력
+        for (int first = 0; first < getpolls; first++) {
+            System.out.println(polls[first * 2][0]); // 문항만 출력
+            for (int second = 0; second < 4; second++) {
+                System.out.println(polls[second * 2 + 1][second]); // 보기값 출력
             }
-
-            answers[i] = getAnswer(scanner, 4); // 답변 입력 받기
+            answers[first] = getAnswer(); // 스캐너를 통해 답변 입력 받기 ?
         }
 
+        // 통계
         System.out.println("-----설문조사 결과-----");
-        for (int i = 0; i < totalpolls; i++) {
-            System.out.println("Q" + (i + 1) + ": " + answers[i]);
+        for (int first = 0; first < getpolls; first++) {
+            System.out.println("Q" + (first + 1) + ": " + answers[first]);
         }
-        return answers;
+        return answers; // 입력 받은 값 던져주기 (sum에....)
         }
         
-    public  int getAnswer(Scanner scanner, int optionsCount) {
-
-        int answers;
-        for(int first=0; first < 4; first=first+1){}
-            System.out.print("답변을 선택하세요: ");
-            answers = scanner.nextInt(); // 답변 입력 받는 코드
-            scanner.nextLine(); // 개행 문자 처리
-            System.out.print(answers);
-        return answers;
-    }
+        // 답변 입력 받는 값
+        public int getAnswer() {   // 스캐너를 통해 답변 입력 받기
+        System.out.print("답변을 선택하세요: ");
+        Scanner myObj = new Scanner(System.in);
+        int answers = myObj.nextInt();
+        // scanner.close();
+         return answers;
+    }   
 }
