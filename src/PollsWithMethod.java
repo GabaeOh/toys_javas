@@ -9,13 +9,13 @@ public class PollsWithMethod {
 
             // 설문조사 항목 호출
             PolllnitailArray polllnitailArray = new PolllnitailArray();
-            PolllnitailArray.main();
+            polllnitailArray.sum();
             // 스캐너 사용하여 답항 답기
             PollScanners pollScanners = new PollScanners();
-            PolllnitailArray.getAnswer(null, 0);
+            pollScanners.Scanners();
             // 받은 답항 통계
             PollStatistics pollStatistics = new PollStatistics();
-            PolllnitailArray.getAnswer(null, 0);
+            pollStatistics.getAnswer();
 
         } catch (Exception e) {
             // TODO: handle exception

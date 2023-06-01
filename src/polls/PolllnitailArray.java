@@ -3,9 +3,8 @@ package polls;
 import java.util.Scanner;
 
 public class PolllnitailArray {
-
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        public int[] sum ( ){
+            Scanner scanner = new Scanner(System.in);
         System.out.print("성함을 입력하세요 ");
         String surveyorName = scanner.nextLine();
         System.out.println("성함 : " + surveyorName);
@@ -20,10 +19,10 @@ public class PolllnitailArray {
                 { "4.강의 진행 속도는 적절하였는가?" },
                 { "(1).전혀 아니다", "(2)아니다", "(3)그렇다", "(4)매우그렇다" }
         };
-        int totalQuestions = polls.length / 2;
-        int[] answers = new int[totalQuestions];
+        int totalpolls = polls.length / 2;
+        int[] answers = new int[totalpolls];
 
-        for (int i = 0; i < totalQuestions; i++) {
+        for (int i = 0; i < totalpolls; i++) {
             System.out.println(polls[i * 2][0]); // 문항 출력
 
             for (int j = 0; j < 4; j++) {
@@ -34,24 +33,22 @@ public class PolllnitailArray {
         }
 
         System.out.println("-----설문조사 결과-----");
-        for (int i = 0; i < totalQuestions; i++) {
+        for (int i = 0; i < totalpolls; i++) {
             System.out.println("Q" + (i + 1) + ": " + answers[i]);
         }
-
-    }
-
-    public static int getAnswer(Scanner scanner, int optionsCount) {
-        int answer;
-        do {
+        return answers;
+        }
+        
+    public  int getAnswer(Scanner scanner, int optionsCount) {
+        
+        int answers;
+        for(int first=0; first < answers.length; first=first+1){}
             System.out.print("답변을 선택하세요: ");
-            answer = scanner.nextInt(); // 답변 입력 받는 코드
+            answers = scanner.nextInt(); // 답변 입력 받는 코드
             scanner.nextLine(); // 개행 문자 처리
-        } while (answer < 1 || answer > optionsCount);
+            System.out.print(answers[first]+", ")
 
-        return answer;
-    }
-
-    public static void main() {
+        return answers;
     }
 
 }
