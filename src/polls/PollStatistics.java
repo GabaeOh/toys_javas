@@ -9,7 +9,7 @@ public class PollStatistics {
         PolllnitailArray polllnitailArray = new PolllnitailArray();
         String[][] totalQuestions= polllnitailArray.Polls();
         
-        int[] answers = {0,0,0,0};
+        int[] answers = {0,0,0,0}; //입력받은 값을 저장
         for (int first = 0; first < totalQuestions.length; first=first+2) {
             System.out.println(totalQuestions[first][0]);
             for (int second = 0; second < 4; second = second+1) {
@@ -17,7 +17,7 @@ public class PollStatistics {
             }
             System.out.println();
             
-            PollScanners pollScanners = new PollScanners();
+            PollScanners pollScanners = new PollScanners(); //스캐너를 통해 값을 입력받기
             answer = pollScanners.getAnswer();
             if (first == 0) {
                 answers[first] = answer;

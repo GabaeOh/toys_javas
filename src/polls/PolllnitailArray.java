@@ -6,6 +6,7 @@ public class PolllnitailArray {
     public String[][] Polls() {
 
         Scanner scanner = new Scanner(System.in);
+
         System.out.print("성함을 입력하세요 ");
         String surveyorName = scanner.nextLine();
         System.out.println("성함 : " + surveyorName);
